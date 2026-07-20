@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nova 1185</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+padding:60px 20px;
+text-align:center;
+}
+
+h1{
+font-size:48px;
+color:#D4AF37;
+letter-spacing:3px;
+margin-bottom:15px;
+}
+
+h2{
+font-weight:300;
+margin-bottom:30px;
+}
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#D4AF37;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+
+}
+
+.hero{
+
+padding:50px 20px;
+text-align:center;
+
+}
+
+.hero img{
+
+width:100%;
+max-width:350px;
+border-radius:20px;
+border:3px solid #D4AF37;
+
+}
+
+section{
+
+padding:40px 20px;
+
+}
+
+footer{
+
+padding:30px;
+text-align:center;
+color:#999;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>NOVA 1185</h1>
+
+<h2>Elegancia que ilumina tu esencia ✨</h2>
+
+<a class="btn" href="#productos">
+Ver colección
+</a>
+
+</header>
+
+<div class="hero">
+
+<img src="images/IMG_5001.jpeg">
+
+</div>
+
+<section id="productos">
+
+<h2 style="text-align:center;color:#D4AF37;margin-bottom:40px;">
+
+Productos Destacados
+
+</h2>
+
+<p style="text-align:center;">
+
+En el próximo paso aparecerán aquí tus primeros productos.
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Nova 1185
+
+</footer>
+
+</body>
+
+</html>
