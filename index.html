@@ -108,7 +108,82 @@ footer{
 
 <p>    “Brilla desde el alma. La joya solo amplifica lo que ya eres.” ✨</p>
 
-<a class="boton" href="#">Ver Colección</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Colección de Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .btn-coleccion {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn-coleccion:hover {
+            background-color: #0056b3;
+        }
+        .galeria {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none; /* Ocultas por defecto */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Sitio Web</h1>
+    <!-- Botón para mostrar la colección -->
+    <button class="btn-coleccion" onclick="mostrarFotos()">Ver Colección</button>
+
+    <!-- Contenedor de las imágenes -->
+    <div class="galeria">
+        <!-- Reemplaza los enlaces por tus fotos de GitHub o internet -->
+        <img src="https://picsum.photos" alt="Foto 1" class="foto-item">
+        <img src="https://picsum.photos" alt="Foto 2" class="foto-item">
+        <img src="https://picsum.photos" alt="Foto 3" class="foto-item">
+    </div>
+
+    <script>
+        function mostrarFotos() {
+            // Selecciona todas las imágenes con la clase foto-item
+            const fotos = document.querySelectorAll('.foto-item');
+            
+            // Cambia el diseño de oculto (none) a visible (block)
+            fotos.forEach(foto => {
+                if (foto.style.display === 'block') {
+                    foto.style.style.display = 'none'; // Las oculta si vuelves a presionar
+                } else {
+                    foto.style.display = 'block'; // Las muestra
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
 
 </header>
 
