@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nova 1185</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova 1185</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
+  <style>
+    /* =======================
+       ESTILO GENERAL
+    ======================= */
+    body{
+      margin:0;
+      background:#050505;
+      color:white;
+      font-family:Arial,Helvetica,sans-serif;
+      overflow-x:hidden;
+      position:relative;
+    }
 
-body{
-    margin:0;
-    background:#050505;
-    color:white;
-    font-family:Arial,Helvetica,sans-serif;
-    overflow-x:hidden;
-    position:relative;
-}
+    /* Fondo de estrellas */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
 
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    z-index:0;
-
-    background-image:
+      background-image:
         radial-gradient(circle at 8% 15%, rgba(255,255,255,.9) 0 1px, transparent 2px),
         radial-gradient(circle at 22% 70%, rgba(212,175,55,.8) 0 2px, transparent 3px),
         radial-gradient(circle at 40% 30%, rgba(255,255,255,.8) 0 1.5px, transparent 3px),
@@ -36,306 +39,332 @@ body::before{
         radial-gradient(circle at 15% 90%, rgba(255,255,255,.8) 0 1px, transparent 2px),
         radial-gradient(circle at 88% 82%, rgba(255,255,255,.9) 0 1.5px, transparent 3px);
 
-    opacity:.8;
-}
-
-header,
-section,
-footer{
-    position:relative;
-    z-index:1;
-}
-header{
-    text-align:center;
-    padding:40px 20px;
-}
-
-header img{
-    width:180px;
-    border-radius:50%;
-}
-
-h1{
-    font-family:'Cormorant Garamond', serif;
-    color:#D4AF37;
-    font-size:64px;
-    font-weight:700;
-    letter-spacing:8px;
-    margin:15px 0 10px;
-    text-shadow:0 0 12px rgba(212,175,55,.35);
-}
-
-p{
-    font-size:20px;
-    color:#ddd;
-}
-
-.boton{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 30px;
-    background:#D4AF37;
-    color:#000;
-    text-decoration:none;
-    border-radius:40px;
-    font-weight:bold;
-}
-
-.linea-dorada{
-    width:120px;
-    height:2px;
-    background:#D4AF37;
-    margin:20px auto;
-    border-radius:10px;
-}
-
-.precio{
-    color:#D4AF37;
-    font-size:22px;
-    font-weight:bold;
-    margin:10px 0;
-}
-
-.eslogan{
-    font-size:20px;
-    color:#ddd;
-    max-width:700px;
-    margin:0 auto 30px;
-    line-height:1.8;
-    font-style:italic;
-
-.galeria{
-    display:none;
-    margin-top:30px;
-    display:none;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-}
-
-section{
-    padding:40px 20px;
-    text-align:center;
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    color:#888;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-
-
-
-
-<h1>NOVA 1185</h1>
-<div class="linea-dorada"></div>
-    
-<p class="eslogan">
-   💫 Brilla desde el alma. La joya solo amplifica lo que ya eres. 🌙
-</p>
-   
-
-       
-        
-    </style>
-</head>
-<body>
-
-    <h2 style="font-size:20px;">
-Tu lugar de joyería en Stainless Steel...
-</h2>
-
-
-    
-
-
-    
-    <!-- Botón para mostrar la colección -->
-<button class="btn-coleccion" onclick="mostrarFotos()">
-    Ver colección
-</button>
- <div class="galeria" id="coleccion">
- <div class="producto">
-    <img src="images/images/IMG_2983.jpeg" alt="Collar">
-    <h3>Set de collar y pantallas de lazo</h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Concha" class="btn-whatsapp">Consultar</a>
-</div>
-        
-
- <div class="producto">
-    <img src="images/images/IMG_2728.jpeg" alt="Collar">
-    <h3>Sortija de Flor (ajustable)</h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Concha" class="btn-whatsapp">Consultar</a>
-</div>
-
-<div class="producto">
-    <img src="images/images/IMG_2752.jpeg" alt="Pulsera">
-    <h3>Collar con corazon en perla</h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Set%20Perlas" class="btn-whatsapp">Consultar</a>
-</div>
-
-<div class="producto">
-    <img src="images/images/IMG_2717.jpeg" alt="Collar">
-    <h3>Nova Ring de luna (ajustable)</h3></h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Sol%20y%20Luna" class="btn-whatsapp">Consultar</a>
-</div>
-
-<div class="producto">
-    <img src="images/images/IMG_2954.jpeg" alt="Collar">
-    <h3>Sortija de sol y luna (ajustable)</h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$15.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Trébol" class="btn-whatsapp">Consultar</a>
-</div>
-
-<div class="producto">
-    <img src="images/images/IMG_2974.jpeg" alt="Collar">
-    <h3>Nova Set de collar y pantallas </h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Set%20Estrellas" class="btn-whatsapp">Consultar</a>
-</div>
-
-    <div class="galeria" id="coleccion">
- <div class="producto">
-    <img src="images/images/IMG_2994.jpeg" alt="Collar">
-    <h3>Collar barbie girl</h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Concha" class="btn-whatsapp">Consultar</a>
-</div>
-        
-<div class="producto">
-    <img src="images/images/IMG_2971.jpeg" alt="Collar">
-    <h3>Pulsera barbie girl</h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$15.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20la%20Colección%20Nova" class="btn-whatsapp">Consultar</a>
-</div>
-        
-<div class="galeria" id="coleccion">
- <div class="producto">
-    <img src="images/images/IMG_3206.jpeg" alt="Collar">
-    <h3>Nova Body chain</h3>
-    <p>Stainless Steel</p>
-    <p class="precio">$19.99</p>
-    <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Concha" class="btn-whatsapp">Consultar</a>
-</div>
-    
-</div>
-
-<script>
-function mostrarFotos() {
-
-    const galeria = document.getElementById("coleccion");
-    const boton = document.querySelector(".btn-coleccion");
-
-    if (galeria.style.display === "grid") {
-        galeria.style.display = "none";
-        boton.innerHTML = "Ver colección";
-    } else {
-        galeria.style.display = "grid";
-        boton.innerHTML = "Ocultar colección";
+      opacity:.8;
     }
 
-}
-</script>
+    header, section, footer{
+      position:relative;
+      z-index:1;
+    }
+
+    /* =======================
+       ENCABEZADO
+    ======================= */
+    header{
+      text-align:center;
+      padding:60px 20px 40px;
+    }
+
+    h1{
+      font-family:'Cormorant Garamond', serif;
+      color:#D4AF37;
+      font-size:64px;
+      font-weight:700;
+      letter-spacing:8px;
+      margin:0;
+      text-shadow:0 0 12px rgba(212,175,55,.35);
+    }
+
+    .linea-dorada{
+      width:120px;
+      height:2px;
+      background:#D4AF37;
+      margin:20px auto;
+      border-radius:10px;
+    }
+
+    .eslogan{
+      font-size:20px;
+      color:#ddd;
+      max-width:700px;
+      margin:0 auto 30px;
+      line-height:1.8;
+      font-style:italic;
+    }
+
+    .subtitulo{
+      font-size:18px;
+      color:#bbb;
+      margin-bottom:30px;
+    }
+
+    /* =======================
+       BOTÓN
+    ======================= */
+    .btn-coleccion{
+      background:#D4AF37;
+      color:black;
+      border:none;
+      padding:14px 32px;
+      border-radius:40px;
+      font-size:18px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:.3s;
+      box-shadow:0 0 20px rgba(212,175,55,.25);
+    }
+
+    .btn-coleccion:hover{
+      transform:translateY(-2px);
+      box-shadow:0 0 28px rgba(212,175,55,.45);
+    }
+
+    /* =======================
+       GALERÍA
+    ======================= */
+    .galeria{
+      display:none; /* OCULTA AL CARGAR */
+      margin-top:40px;
+      padding:0 20px 40px;
+      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      gap:28px;
+    }
+
+    .producto{
+      background:#111;
+      border:1px solid rgba(212,175,55,.45);
+      border-radius:20px;
+      overflow:hidden;
+      transition:.35s;
+      box-shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+
+    .producto:hover{
+      transform:translateY(-8px);
+      box-shadow:0 18px 40px rgba(212,175,55,.28);
+    }
+
+    .producto img{
+      width:100%;
+      aspect-ratio:1/1;
+      object-fit:cover;
+      display:block;
+    }
+
+    .producto h3{
+      color:#D4AF37;
+      margin:16px 16px 6px;
+      font-size:22px;
+      font-family:'Cormorant Garamond', serif;
+    }
+
+    .producto p{
+      margin:0 16px 12px;
+      color:#ddd;
+      font-size:16px;
+    }
+
+    .precio{
+      color:#D4AF37;
+      font-size:22px;
+      font-weight:bold;
+      margin:0 16px 18px;
+    }
+
+    .btn-whatsapp{
+      display:inline-block;
+      margin:0 16px 20px;
+      padding:12px 24px;
+      background:#D4AF37;
+      color:black;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn-whatsapp:hover{
+      background:white;
+    }
+
+    /* =======================
+       SECCIÓN FINAL
+    ======================= */
+    section{
+      padding:20px 20px 50px;
+      text-align:center;
+    }
+
+    section h2{
+      color:#D4AF37;
+      font-size:32px;
+      margin-bottom:16px;
+      font-family:'Cormorant Garamond', serif;
+    }
+
+    section p{
+      max-width:900px;
+      margin:0 auto;
+      line-height:1.8;
+      color:#ddd;
+    }
+
+    footer{
+      text-align:center;
+      padding:24px;
+      color:#888;
+      border-top:1px solid rgba(212,175,55,.15);
+    }
+
+    /* =======================
+       RESPONSIVE
+    ======================= */
+    @media (max-width:768px){
+      h1{
+        font-size:44px;
+        letter-spacing:4px;
+      }
+
+      .eslogan{
+        font-size:18px;
+      }
+
+      .btn-coleccion{
+        width:100%;
+        max-width:320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =======================
+       ENCABEZADO
+  ======================= -->
+  <header>
+    <h1>NOVA 1185</h1>
+    <div class="linea-dorada"></div>
+
+    <p class="eslogan">
+      💫 Brilla desde el alma. La joya solo amplifica lo que ya eres. 🌙
+    </p>
+
+    <p class="subtitulo">
+      Tu lugar de joyería en Stainless Steel
+    </p>
+
+    <!-- Botón -->
+    <button class="btn-coleccion" onclick="mostrarFotos()">
+      Ver colección
+    </button>
+  </header>
+
+  <!-- =======================
+       GALERÍA
+  ======================= -->
+  <div class="galeria" id="coleccion">
+
+    <div class="producto">
+      <img src="images/images/IMG_2983.jpeg" alt="Set lazo">
+      <h3>Set de collar y pantallas de lazo</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$17.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Set%20de%20lazo" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_2728.jpeg" alt="Sortija Flor">
+      <h3>Sortija de Flor (ajustable)</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$17.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20la%20Sortija%20de%20Flor" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_2752.jpeg" alt="Corazón Perla">
+      <h3>Collar con corazón en perla</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$17.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20con%20corazón%20en%20perla" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_2717.jpeg" alt="Nova Ring Luna">
+      <h3>Nova Ring de luna (ajustable)</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$17.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20la%20Nova%20Ring%20de%20luna" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_2954.jpeg" alt="Sol y Luna">
+      <h3>Sortija de sol y luna (ajustable)</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$15.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20la%20Sortija%20de%20sol%20y%20luna" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_2974.jpeg" alt="Nova Set">
+      <h3>Nova Set de collar y pantallas</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$17.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Nova%20Set" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_2994.jpeg" alt="Barbie Girl">
+      <h3>Collar Barbie Girl</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$17.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Barbie%20Girl" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_2971.jpeg" alt="Pulsera Barbie">
+      <h3>Pulsera Barbie Girl</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$15.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20la%20Pulsera%20Barbie%20Girl" class="btn-whatsapp">Consultar</a>
+    </div>
+
+    <div class="producto">
+      <img src="images/images/IMG_3206.jpeg" alt="Body Chain">
+      <h3>Nova Body Chain</h3>
+      <p>Stainless Steel</p>
+      <p class="precio">$19.99</p>
+      <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Nova%20Body%20Chain" class="btn-whatsapp">Consultar</a>
+    </div>
+
+  </div>
+
+  <!-- =======================
+       MENSAJE FINAL
+  ======================= -->
+  <section>
+    <h2>Bienvenidos ✨</h2>
+
+    <p>
+      Gracias por visitar Nova 1185. Cada pieza ha sido elegida o creada con mucho cariño, estilo y ese toque único que te hace resaltar sin esfuerzo.
+      🌙 <strong>Tan única como una estrella en su propia constelación.</strong>
+    </p>
+  </section>
+
+  <!-- =======================
+       PIE DE PÁGINA
+  ======================= -->
+  <footer>
+    © 2025 Nova 1185 • Puerto Rico
+  </footer>
+
+  <!-- =======================
+       JAVASCRIPT
+  ======================= -->
+  <script>
+    function mostrarFotos() {
+      const galeria = document.getElementById("coleccion");
+      const boton = document.querySelector(".btn-coleccion");
+
+      if (galeria.style.display === "grid") {
+        galeria.style.display = "none";
+        boton.innerHTML = "Ver colección";
+      } else {
+        galeria.style.display = "grid";
+        boton.innerHTML = "Ocultar colección";
+      }
+    }
+  </script>
 
 </body>
-</html>
-
-
-</header>
-
-<section>
-
-<h2 style="color:#D4AF37;">Bienvenidos!</h2>
-
-<p>
-
-✨Gracias por visitar Nova 1185, Cada pieza de Nova 1185 ha sido elegida o creada con mucho cariño, estilo y ese toque único que te hace resaltar sin esfuerzo.
-
-<div style="display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-margin-top:40px;">
-
-<div style="background:#111;border:1px solid #D4AF37;border-radius:15px;padding:15px;text-align:center;">
-<img src="images/images/IMG_5001.jpeg" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:15px;">
-<h3>Collar de tortuga</h3>
-<p>Stainless Steel</p>
- <p class="precio">$15.99</p>
-<a class="btn" href="https://wa.me/19392586801?text=Hola%20me%20interesa%20el%20Collar%20Concha">Consultar</a>
-</div>
-
-<div style="background:#111;border:1px solid #D4AF37;border-radius:15px;padding:15px;text-align:center;">
-<img src="images/images/IMG_5002.jpeg" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:15px;">
-<h3>concha de mar</h3>
-<p>Stainless Steel</p>
-    <p class="precio">$15.99</p>
-<a class="btn" href="https://wa.me/19392586801?text=Hola%20me%20interesa%20el%20Set%20Perlas">Consultar</a>
-</div>
-
-<div style="background:#111;border:1px solid #D4AF37;border-radius:15px;padding:15px;text-align:center;">
-<img src="images/images/IMG_5003.jpeg" style="width:100%;border-radius:10px;">
-<h3>collar de concha y estrella de mar. Hand made</h3>
-<p>Stainless Steel</p>
-    <p class="precio">$15.99</p>
-<a class="btn" href="https://wa.me/19392586801?text=Hola%20me%20interesa%20el%20Collar%20Sol%20y%20Luna">Consultar</a>
-</div>
-
-<div style="background:#111;border:1px solid #D4AF37;border-radius:15px;padding:15px;text-align:center;">
-<img src="images/images/IMG_5004.jpeg" style="width:100%;border-radius:10px;">
-<h3>collar de estrella de mar.</h3>
-<p>Stainless Steel</p>
-    <p class="precio">$15.99</p>
-<a class="btn" href="https://wa.me/19392586801?text=Hola%20me%20interesa%20el%20Collar%20Trébol">Consultar</a>
-</div>
-
-<div style="background:#111;border:1px solid #D4AF37;border-radius:15px;padding:15px;text-align:center;">
-<img src="images/images/IMG_5005.jpeg" style="width:100%;border-radius:10px;">
-<h3>Collar de concha y perla. hand made.</h3>
-<p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-<a class="btn" href="https://wa.me/19392586801?text=Hola%20me%20interesa%20el%20Set%20Estrellas">Consultar</a>
-</div>
-
-<div style="background:#111;border:1px solid #D4AF37;border-radius:15px;padding:15px;text-align:center;">
-<img src="images/images/IMG_2979.jpeg" style="width:100%;border-radius:10px;">
-<h3>Collar de concha con perlas y azul. hand made.</h3>
-<p>Stainless Steel</p>
-    <p class="precio">$17.99</p>
-<a class="btn" href="https://wa.me/19392586801?text=Hola%20me%20interesa%20el%20Set%20Estrellas">Consultar</a>
-</div>
-
-</div> 🌙 “Tan única como una estrella en su propia constelación.”
-
-</p>
-
-</section>
-
-<footer>
-
-© 2025 Nova 1185
-
-</footer>
-
-</body>
-
 </html>
