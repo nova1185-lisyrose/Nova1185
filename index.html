@@ -103,6 +103,14 @@ p{
     margin:0 auto 30px;
     line-height:1.8;
     font-style:italic;
+
+.galeria{
+    display:none;
+    margin-top:30px;
+    display:none;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
 }
 
 section{
@@ -163,7 +171,7 @@ Tu lugar de joyería en Stainless Steel...
     <a href="https://wa.me/19392586801?text=Hola,%20me%20interesa%20el%20Collar%20Concha" class="btn-whatsapp">Consultar</a>
 </div>
         
-<div class="galeria" id="coleccion">
+
  <div class="producto">
     <img src="images/images/IMG_2728.jpeg" alt="Collar">
     <h3>Sortija de Flor (ajustable)</h3>
@@ -232,15 +240,18 @@ Tu lugar de joyería en Stainless Steel...
     
 </div>
 
-    <script>
+<script>
 function mostrarFotos() {
 
     const galeria = document.getElementById("coleccion");
+    const boton = document.querySelector(".btn-coleccion");
 
     if (galeria.style.display === "grid") {
         galeria.style.display = "none";
+        boton.innerHTML = "Ver colección";
     } else {
         galeria.style.display = "grid";
+        boton.innerHTML = "Ocultar colección";
     }
 
 }
