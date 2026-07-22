@@ -103,11 +103,11 @@ footer{
             display: none; /* Ocultas por defecto */
         }
         .galeria{
-    display:none;
-    margin-top:30px;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
+            display:none;
+            margin-top:30px;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:25px;
+        }
     </style>
 </head>
 <body>
@@ -120,9 +120,10 @@ Tu lugar de joyería en Stainless Steel
     
 
 
+    
     <!-- Botón para mostrar la colección -->
-    <button class="btn-coleccion" onclick="mostrarFotos()">
-Ver colección
+<button class="btn-coleccion" onclick="mostrarFotos()">
+    Ver colección
 </button>
 <div class="galeria" id="coleccion">
 
@@ -171,20 +172,18 @@ Ver colección
 </div>
 
     <script>
-        function mostrarFotos() {
-            // Selecciona todas las imágenes con la clase foto-item
-            const fotos = document.querySelectorAll('.foto-item');
-            
-            // Cambia el diseño de oculto (none) a visible (block)
-            fotos.forEach(foto => {
-                if (foto.style.display === 'block') {
-                    foto.style.display = 'none'; // Las oculta si vuelves a presionar
-                } else {
-                    foto.style.display = 'block'; // Las muestra
-                }
-            });
-        }
-    </script>
+function mostrarFotos() {
+
+    const galeria = document.getElementById("coleccion");
+
+    if (galeria.style.display === "grid") {
+        galeria.style.display = "none";
+    } else {
+        galeria.style.display = "grid";
+    }
+
+}
+</script>
 
 </body>
 </html>
